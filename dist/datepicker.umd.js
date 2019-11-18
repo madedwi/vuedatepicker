@@ -136,21 +136,6 @@ module.exports = function (S, index, unicode) {
 
 /***/ }),
 
-/***/ "0a15":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("2350")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".datetime-picker[data-v-215ba16e]{position:relative;display:inline-block;font-family:Segoe UI,Lucida Grande,Helvetica,Arial,Microsoft YaHei;-webkit-font-smoothing:antialiased;color:#333}.datetime-picker *[data-v-215ba16e]{-webkit-box-sizing:border-box;box-sizing:border-box}.datetime-picker input[data-v-215ba16e]{width:238px;padding:5px 10px;height:30px;outline:0 none;border:1px solid #ccc;font-size:13px}.datetime-picker .picker-wrap[data-v-215ba16e]{position:absolute;z-index:1000;width:238px;height:280px;margin-top:2px;background-color:#fff;-webkit-box-shadow:0 0 6px #ccc;box-shadow:0 0 6px #ccc}.datetime-picker table[data-v-215ba16e]{width:100%;border-collapse:collapse;border-spacing:0;text-align:center;font-size:13px}.datetime-picker tr[data-v-215ba16e]{height:34px;border:0 none}.datetime-picker td[data-v-215ba16e],.datetime-picker th[data-v-215ba16e]{overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:34px;height:34px;padding:0;border:0 none;line-height:34px;text-align:center}.datetime-picker td[data-v-215ba16e]{cursor:pointer}.datetime-picker td[data-v-215ba16e]:hover{background-color:#f0f0f0}.datetime-picker .date-disabled[data-v-215ba16e]:not(.date-active){cursor:not-allowed;color:#ccc}.datetime-picker .date-disabled[data-v-215ba16e]:not(.date-active):hover{background-color:transparent}.datetime-picker .date-future[data-v-215ba16e],.datetime-picker .date-pass[data-v-215ba16e]{color:#aaa}.datetime-picker .date-active[data-v-215ba16e],.datetime-picker .date-active[data-v-215ba16e]:hover{background-color:#ececec;color:#3bb4f2}.datetime-picker .date-head[data-v-215ba16e]{background-color:#3bb4f2;text-align:center;color:#fff;font-size:14px}.datetime-picker .date-days[data-v-215ba16e]{color:#3bb4f2;font-size:14px}.datetime-picker .show-year[data-v-215ba16e]{display:inline-block;min-width:66px}.datetime-picker .show-month[data-v-215ba16e]{display:inline-block;min-width:32px}.datetime-picker .btn-next[data-v-215ba16e],.datetime-picker .btn-prev[data-v-215ba16e]{cursor:pointer;padding:8px 11px}.datetime-picker .btn-next[data-v-215ba16e]:after,.datetime-picker .btn-prev[data-v-215ba16e]:after{position:relative;content:\"\";left:2px;display:inline-block;width:7px;height:7px;border-top:1px solid #fff;border-left:1px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.datetime-picker .btn-next[data-v-215ba16e]:after{left:-2px;border:0 none;border-right:1px solid #fff;border-bottom:1px solid #fff}.datetime-picker .btn-next[data-v-215ba16e]:hover,.datetime-picker .btn-prev[data-v-215ba16e]:hover{background:rgba(16,160,234,.5)}", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "0bfb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -169,6 +154,21 @@ module.exports = function () {
   return result;
 };
 
+
+/***/ }),
+
+/***/ "0fab":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("c69c");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("40437136", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -797,6 +797,17 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "51b2":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_0cfcfbd9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("0fab");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_0cfcfbd9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_0cfcfbd9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_0cfcfbd9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "520a":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1256,27 +1267,27 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ "bef8":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("0a15");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("e07533c0", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ "c69a":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__("9e1e") && !__webpack_require__("79e5")(function () {
   return Object.defineProperty(__webpack_require__("230e")('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
+
+
+/***/ }),
+
+/***/ "c69c":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("2350")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".datetime-picker[data-v-0cfcfbd9]{position:relative;display:inline-block;font-family:Segoe UI,Lucida Grande,Helvetica,Arial,Microsoft YaHei;-webkit-font-smoothing:antialiased;color:#333}.datetime-picker *[data-v-0cfcfbd9]{-webkit-box-sizing:border-box;box-sizing:border-box}.datetime-picker input[data-v-0cfcfbd9]{width:238px;padding:5px 10px;height:30px;outline:0 none;border:1px solid #ccc;font-size:13px}.datetime-picker .picker-wrap[data-v-0cfcfbd9]{position:absolute;z-index:1000;width:238px;height:280px;margin-top:2px;background-color:#fff;-webkit-box-shadow:0 0 6px #ccc;box-shadow:0 0 6px #ccc}.datetime-picker table[data-v-0cfcfbd9]{width:100%;border-collapse:collapse;border-spacing:0;text-align:center;font-size:13px}.datetime-picker tr[data-v-0cfcfbd9]{height:34px;border:0 none}.datetime-picker td[data-v-0cfcfbd9],.datetime-picker th[data-v-0cfcfbd9]{overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:34px;height:34px;padding:0;border:0 none;line-height:34px;text-align:center}.datetime-picker td[data-v-0cfcfbd9]{cursor:pointer}.datetime-picker td[data-v-0cfcfbd9]:hover{background-color:#f0f0f0}.datetime-picker .date-disabled[data-v-0cfcfbd9]:not(.date-active){cursor:not-allowed;color:#ccc}.datetime-picker .date-disabled[data-v-0cfcfbd9]:not(.date-active):hover{background-color:transparent}.datetime-picker .date-future[data-v-0cfcfbd9],.datetime-picker .date-pass[data-v-0cfcfbd9]{color:#aaa}.datetime-picker .date-active[data-v-0cfcfbd9],.datetime-picker .date-active[data-v-0cfcfbd9]:hover{background-color:#ececec;color:#3bb4f2}.datetime-picker .date-head[data-v-0cfcfbd9]{background-color:#3bb4f2;text-align:center;color:#fff;font-size:14px}.datetime-picker .date-days[data-v-0cfcfbd9]{color:#3bb4f2;font-size:14px}.datetime-picker .show-year[data-v-0cfcfbd9]{display:inline-block;min-width:66px}.datetime-picker .show-month[data-v-0cfcfbd9]{display:inline-block;min-width:32px}.datetime-picker .btn-next[data-v-0cfcfbd9],.datetime-picker .btn-prev[data-v-0cfcfbd9]{cursor:pointer;padding:8px 11px}.datetime-picker .btn-next[data-v-0cfcfbd9]:after,.datetime-picker .btn-prev[data-v-0cfcfbd9]:after{position:relative;content:\"\";left:2px;display:inline-block;width:7px;height:7px;border-top:1px solid #fff;border-left:1px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.datetime-picker .btn-next[data-v-0cfcfbd9]:after{left:-2px;border:0 none;border-right:1px solid #fff;border-bottom:1px solid #fff}.datetime-picker .btn-next[data-v-0cfcfbd9]:hover,.datetime-picker .btn-prev[data-v-0cfcfbd9]:hover{background:rgba(16,160,234,.5)}", ""]);
+
+// exports
 
 
 /***/ }),
@@ -1400,7 +1411,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"465f9823-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-date-picker.vue?vue&type=template&id=215ba16e&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"465f9823-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-date-picker.vue?vue&type=template&id=0cfcfbd9&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"datetime-picker"},[_c('input',_vm._b({class:_vm.inputClass,style:(_vm.inputStyle),attrs:{"type":"text","name":_vm.name,"readonly":_vm.readonly},domProps:{"value":_vm.pickedValue},on:{"click":function($event){_vm.show = !_vm.show}}},'input',_vm.inputAttr,false)),_c('div',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.show),expression:"show"}],staticClass:"picker-wrap",class:_vm.calendarClass,style:(_vm.calendarStyle)},'div',_vm.calendarAttr,false),[_c('table',{staticClass:"date-picker"},[_c('thead',[_c('tr',{staticClass:"date-head"},[_c('th',{attrs:{"colspan":"4"}},[_c('span',{staticClass:"btn-prev",on:{"click":function($event){return _vm.yearClick(-1)}}}),_c('span',{staticClass:"show-year"},[_vm._v(_vm._s(_vm.now.getFullYear()))]),_c('span',{staticClass:"btn-next",on:{"click":function($event){return _vm.yearClick(1)}}})]),_c('th',{attrs:{"colspan":"3"}},[_c('span',{staticClass:"btn-prev",on:{"click":function($event){return _vm.monthClick(-1)}}}),_c('span',{staticClass:"show-month"},[_vm._v(_vm._s(_vm.months[_vm.now.getMonth()]))]),_c('span',{staticClass:"btn-next",on:{"click":function($event){return _vm.monthClick(1)}}})])]),_c('tr',{staticClass:"date-days"},_vm._l((_vm.days),function(day){return _c('th',{key:day},[_vm._v(_vm._s(day))])}),0)]),_c('tbody',_vm._l((6),function(v,i){return _c('tr',{key:i},_vm._l((7),function(v,j){return _c('td',{key:j,class:[
               _vm.date[i * 7 + j] ? _vm.date[i * 7 + j].status : '',
               { 'date-disabled': _vm.date[i * 7 + j] && _vm.date[i * 7 + j].disabled }
@@ -1408,7 +1419,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/vue-date-picker.vue?vue&type=template&id=215ba16e&scoped=true&
+// CONCATENATED MODULE: ./src/vue-date-picker.vue?vue&type=template&id=0cfcfbd9&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.replace.js
 var es6_regexp_replace = __webpack_require__("a481");
@@ -1769,10 +1780,9 @@ var es6_regexp_replace = __webpack_require__("a481");
   mounted: function mounted() {
     var _this = this;
 
-    this.pickedDate = this.value;
     this.$nextTick(function () {
+      _this.pickedDate = _this.value;
       _this.now = _this.value == null ? new Date() : _this.parse(_this.value);
-      console.log(_this.pickedDate);
       document.addEventListener('click', _this.leave, false);
     });
   },
@@ -1782,8 +1792,8 @@ var es6_regexp_replace = __webpack_require__("a481");
 });
 // CONCATENATED MODULE: ./src/vue-date-picker.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_vue_date_pickervue_type_script_lang_js_ = (vue_date_pickervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/vue-date-picker.vue?vue&type=style&index=0&id=215ba16e&scoped=true&lang=css&
-var vue_date_pickervue_type_style_index_0_id_215ba16e_scoped_true_lang_css_ = __webpack_require__("fd9b");
+// EXTERNAL MODULE: ./src/vue-date-picker.vue?vue&type=style&index=0&id=0cfcfbd9&scoped=true&lang=css&
+var vue_date_pickervue_type_style_index_0_id_0cfcfbd9_scoped_true_lang_css_ = __webpack_require__("51b2");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -1895,7 +1905,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "215ba16e",
+  "0cfcfbd9",
   null
   
 )
@@ -1907,17 +1917,6 @@ var component = normalizeComponent(
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (vue_date_picker);
 
 
-
-/***/ }),
-
-/***/ "fd9b":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_215ba16e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("bef8");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_215ba16e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_215ba16e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_date_picker_vue_vue_type_style_index_0_id_215ba16e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ })
 
