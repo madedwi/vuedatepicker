@@ -325,6 +325,8 @@ export default {
       this.now = this.value == null 
         ? new Date()
         : this.parse(this.value);
+        
+      console.log(this.pickedDate);
       document.addEventListener('click', this.leave, false)
     })
   },
