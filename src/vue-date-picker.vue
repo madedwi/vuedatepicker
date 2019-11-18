@@ -204,7 +204,7 @@ export default {
   },
   computed : {
     pickedValue(){
-      return this.pickedDate == null ? '' : this.stringify() ;
+      return this.value == undefined ? '' :  this.stringify(this.parse(this.value), this.format);
     }
   },
   data () {
@@ -224,10 +224,6 @@ export default {
     },
     show () {
       this.update()
-    },
-    value(nv, ov){
-      this.pickedDate = nv;
-      this.now = this.parse(nv);
     }
   },
   methods: {
