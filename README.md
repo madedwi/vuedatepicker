@@ -14,12 +14,7 @@ I made this repo because 8788/vue-date-picker did not fix the problem that was r
 ## Instllation
 
 ```bash
-$ npm install @madedwi/vuedatepicker@1.0.1
-```
-
-OR add to your package.json
-```bash
-"@madedwi/vuedatepicker": "1.0.1"
+$ npm install @madedwi/vuedatepicker
 ```
 
 ## Usage

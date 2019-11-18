@@ -32,6 +32,11 @@ export default {
       return date.getTime() < Date.now()
     }
   },
+  mounted(){
+    setTimeout(() => {
+      this.date1 = '2019-11-20';
+    }, 3000);
+  },
   watch : {
     date1(n, o){
       console.log(n);

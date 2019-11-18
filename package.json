@@ -1,12 +1,12 @@
 {
     "name": "@madedwi/vuedatepicker",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "datepicker component for Vue 2.x",
     "main": "dist/datepicker.common.js",
     "unpkg": "dist/datepicker.umd.js",
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build --target lib --name datepicker ./src/vue-date-picker.vue",
+        "build": "vue-cli-service build --fix --target lib --name datepicker ./src/vue-date-picker.vue",
         "lint": "vue-cli-service lint"
     },
     "repository": "git://github.com/madedwi/vuedatepicker.git",

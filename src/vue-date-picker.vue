@@ -193,7 +193,7 @@ export default {
     readonly: { type: Boolean, default: false },
     format: { type: String, default: 'YYYY-MM-DD' },
     name: { type: String, default: '' },
-    value : {type: String, default:null},
+    value : {type: String},
     inputAttr: Object,
     inputStyle: [Object, Array],
     inputClass: [Object, Array],
@@ -226,7 +226,8 @@ export default {
       this.update()
     },
     value(nv, ov){
-      console.log(nv);
+      this.pickedDate = nv;
+      this.now = this.parse(nv);
     }
   },
   methods: {
