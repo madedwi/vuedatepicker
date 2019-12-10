@@ -136,16 +136,11 @@
 </style>
 
 <template>
-  <div class="datetime-picker">
+  <div class="datetime-picker" ref="container">
     <input
       type="text"
-      v-bind="inputAttr"
-      :name="name"
-      :style="inputStyle"
-      :class="inputClass"
-      :readonly="readonly"
-      :value="pickedValue"
-      @click="show = !show">
+      @click="show = !show && !isDisabled && !isReadonly"
+      v-bind="inputProps">
     <div
       class="picker-wrap"
       v-bind="calendarAttr"
@@ -190,7 +185,6 @@
 <script>
 export default {
   props: {
-    readonly: { type: Boolean, default: false },
     format: { type: String, default: 'YYYY-MM-DD' },
     name: { type: String, default: '' },
     value : {type: String},
@@ -203,6 +197,24 @@ export default {
     disabledDate: { type: Function, default: () => false }
   },
   computed : {
+    inputProps(){
+      let inputAttr = this.inputAttr || {};
+      inputAttr.name = this.name;
+      inputAttr.style = this.inputStyle || this.$vnode.data.staticStyle;
+      inputAttr.class = this.inputClass || this.$vnode.data.staticClass;
+      inputAttr.value= this.pickedValue;
+      inputAttr = Object.assign({}, inputAttr, this.$attrs);
+      
+      if(this.$attrs.disabled != undefined){
+        this.isDisabled = true;
+      } 
+
+      if(this.$attrs.readonly != undefined){
+        this.isReadonly = true;
+      } 
+
+      return inputAttr;
+    },
     pickedValue(){
       return this.value == undefined ? '' :  this.stringify(this.parse(this.value), this.format);
     }
@@ -214,7 +226,9 @@ export default {
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       date: [],
       now: new Date(),
-      pickedDate : null
+      pickedDate : null,
+      isReadonly : false,
+      isDisabled : false
       // pickedValue: ''
     }
   },
@@ -326,6 +340,23 @@ export default {
         ? new Date()
         : this.parse(this.value);
       document.addEventListener('click', this.leave, false)
+
+      for(let key in this.$attrs){
+        this.$refs.container.removeAttribute(key);
+      }
+
+      if(this.$vnode.data.staticClass){
+        this.$vnode.data.staticClass.split(' ').forEach( className => {
+          this.$refs.container.classList.remove(className);
+        })
+      };
+
+      if(this.$vnode.data.staticStyle){
+        for(let styleKey in this.$vnode.data.staticStyle){
+          this.$refs.container.style[styleKey] = '';
+        }
+      }
+      
     })
   },
   beforeDestroy () {

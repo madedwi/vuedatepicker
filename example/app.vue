@@ -6,10 +6,10 @@
 
 <template>
   <div class="demo">
-    <datepicker :readonly="true" format="YYYY-MM-DD" name="date1"></datepicker>
-    <datepicker value="2018-9-5" format="YYYY-M-D" name="date2" :input-attr="{ 'data-test': 'value' }"></datepicker>
-    <datepicker :readonly="true" format="MMM/D/YYYY" name="date3" :disabled-date="disabledDate"></datepicker>
-    <datepicker :readonly="true" format="YYYY-MM-DD" name="date1" v-model="date1"></datepicker>
+    <datepicker format="YYYY-MM-DD" name="date1"></datepicker>
+    <datepicker value="2018-9-5" format="YYYY-M-D" name="date2" class="form-control aku-hebat" id="crotinside"  readonly style="font-size:20px;"></datepicker>
+    <datepicker format="MMM/D/YYYY" name="date3" :disabled-date="disabledDate"></datepicker>
+    <datepicker format="YYYY-MM-DD" name="date1" v-model="date1"></datepicker>
     <br>
     Model Value : {{date1}}
   </div>
